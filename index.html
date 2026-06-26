@@ -34,7 +34,7 @@
             font-size: 1.0625rem;
             color: #4D4D4F;
             max-width: 480px;
-            margin-bottom: 40px;
+            margin-bottom: 0;
         }
         .btn {
             display: inline-block;
@@ -46,13 +46,36 @@
             border-radius: 4px;
             text-decoration: none;
             transition: opacity 0.15s;
+            margin-top: 40px;
         }
         .btn:hover {
             opacity: 0.88;
             text-decoration: none;
         }
+        .lang-divider {
+            border: none;
+            border-top: 1px solid #D2D2D2;
+            margin: 48px 0;
+            max-width: 480px;
+        }
+        .lang-block h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4D4D4F;
+            line-height: 1.15;
+            margin-top: 0;
+            margin-bottom: 24px;
+            max-width: 560px;
+        }
+        .lang-block p {
+            font-size: 1.0625rem;
+            color: #4D4D4F;
+            max-width: 480px;
+            margin-bottom: 0;
+        }
         @media (max-width: 600px) {
-            .coming-soon-wrap h1 { font-size: 1.875rem; }
+            .coming-soon-wrap h1,
+            .lang-block h2 { font-size: 1.875rem; }
         }
     </style>
 </head>
@@ -69,10 +92,20 @@
 <main>
     <div class="coming-soon-wrap">
         <div class="container">
+
             <p class="eyebrow">Articulate Storyline Coach</p>
             <h1>Diese Seite ist gerade im Aufbau.</h1>
             <p>Bis es hier mehr zu sehen gibt, findest du meine Inhalte auf LinkedIn — Tipps, Gedanken und alles rund um professionelles E-Learning mit Storyline.</p>
-            <a href="https://www.linkedin.com/in/georgvolmer" class="btn" target="_blank" rel="noopener">Auf LinkedIn folgen</a>
+
+            <hr class="lang-divider">
+
+            <div class="lang-block">
+                <h2>This site is currently under construction.</h2>
+                <p>In the meantime, you can find my content on LinkedIn — tips, thoughts, and everything about building professional e-learning with Storyline.</p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/georgvolmer" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+
         </div>
     </div>
 </main>
