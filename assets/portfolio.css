@@ -707,7 +707,9 @@ a:hover {
 }
 
 .quote blockquote strong {
-  color: #CB3D2D;
+  color: #F15B4E;
+  font-size: 1.1875rem;
+  font-weight: 700;
 }
 
 .quote figcaption {
@@ -799,6 +801,20 @@ a:hover {
   .split,
   .quotes {
     grid-template-columns: 1fr;
+  }
+
+  .cards {
+    gap: 0;
+  }
+
+  .card-body {
+    padding-top: 12px;
+  }
+
+  .card + .card {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid #ECECEB;
   }
 
   .pair-arrow {
