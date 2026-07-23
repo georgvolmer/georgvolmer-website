@@ -305,10 +305,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  font-weight: 700;
   box-shadow: 0 4px 14px rgba(241, 91, 78, 0.4);
   z-index: 2;
+}
+
+.pair-arrow svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* ---- Key decisions ---- */
@@ -429,6 +432,9 @@ a:hover {
   left: 33%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   background: #F15B4E;
   color: #FFFFFF;
   border: none;
@@ -440,6 +446,12 @@ a:hover {
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
   transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.icon-play {
+  width: 11px;
+  height: 13px;
+  flex-shrink: 0;
 }
 
 .embed-btn:hover {
@@ -468,6 +480,15 @@ a:hover {
 .embed-meta > a {
   font-size: 0.8125rem;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-external {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
 }
 
 /* ---- Read the full story (details/summary) ---- */
@@ -499,8 +520,10 @@ a:hover {
 
 .story .chev {
   color: #F15B4E;
-  font-size: 0.75rem;
+  width: 10px;
+  height: 12px;
   display: inline-block;
+  flex-shrink: 0;
   transition: transform 0.2s ease;
 }
 
@@ -586,10 +609,11 @@ a:hover {
 
 .swatch-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
   background: #FFFFFF;
   aspect-ratio: 1 / 1;
+  max-width: 100%;
 }
 
 .genie-stage .swatch-grid {
@@ -629,10 +653,14 @@ a:hover {
 
 .genie-stage .genie-logo {
   position: absolute;
-  right: 18px;
-  bottom: 18px;
-  width: 60px;
-  height: 60px;
+  right: 4%;
+  bottom: 4%;
+  width: 16%;
+  height: 16%;
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 60px;
+  max-height: 60px;
   object-fit: contain;
 }
 
@@ -693,11 +721,10 @@ a:hover {
 }
 
 .quote-mark {
-  font-size: 2.5rem;
-  line-height: 0.5;
+  display: block;
+  width: 32px;
+  height: 24px;
   color: #F15B4E;
-  font-weight: 700;
-  font-family: Georgia, serif;
 }
 
 .quote blockquote {
@@ -708,7 +735,6 @@ a:hover {
 
 .quote blockquote strong {
   color: #F15B4E;
-  font-size: 1.1875rem;
   font-weight: 700;
 }
 
@@ -834,7 +860,12 @@ a:hover {
     justify-content: center;
   }
 
+  .swatch .name,
   .swatch .hex {
     display: none;
+  }
+
+  .swatch {
+    padding: 0;
   }
 }
