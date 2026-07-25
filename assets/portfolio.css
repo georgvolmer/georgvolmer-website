@@ -216,6 +216,13 @@ a:hover {
   line-height: 1.4;
 }
 
+.tm {
+  font-size: 0.55em;
+  font-weight: 400;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
 .card-blurb {
   font-size: 0.9375rem;
   line-height: 1.7;
@@ -827,6 +834,10 @@ a:hover {
   .split,
   .quotes {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 48px;
   }
 
   .cards {
