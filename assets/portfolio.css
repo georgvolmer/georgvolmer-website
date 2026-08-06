@@ -28,6 +28,21 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ---- Language switch (header) ---- */
+
+.lang-switch {
+  margin-left: auto;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #999999;
+  text-decoration: none;
+}
+
+.lang-switch:hover {
+  color: #F15B4E;
+  text-decoration: none;
+}
+
 /* ---- Layout helpers ---- */
 
 .container {
