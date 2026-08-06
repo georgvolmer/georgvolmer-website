@@ -28,6 +28,36 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ---- Language switch (header) ---- */
+
+.lang-switch {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.lang-switch a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  color: #F15B4E;
+  text-decoration: none;
+}
+
+.lang-switch-current {
+  color: #4D4D4F;
+}
+
+.lang-switch-sep {
+  color: #D2D2D2;
+  font-weight: 400;
+}
+
 /* ---- Layout helpers ---- */
 
 .container {
