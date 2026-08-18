@@ -155,36 +155,6 @@ a:hover {
   margin-bottom: 64px;
 }
 
-.project-intro--tight {
-  margin-bottom: 20px;
-}
-
-/* ---- Context box (aside) ---- */
-
-.context-box {
-  max-width: 760px;
-  margin-top: 0;
-  margin-bottom: 64px;
-  padding: 20px 16px;
-  background: #FAFAF9;
-  border: 1px solid #ECECEB;
-  border-radius: 10px;
-}
-
-.context-box-title {
-  margin: 0 0 4px;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  color: #4D4D4F;
-}
-
-.context-box-text {
-  margin: 0;
-  font-size: 0.9375rem;
-  line-height: 1.7;
-  color: #6B6B6D;
-}
-
 /* ---- Project cards (top) ---- */
 
 .cards {
