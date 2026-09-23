@@ -1,2 +1,5 @@
 # Published Storyline export — treat as opaque, never normalize line endings
 projects/ceo-spoof/** -text
+
+# Video captions: keep byte-identical to the source file (client-approved copy)
+assets/video/*.vtt -text

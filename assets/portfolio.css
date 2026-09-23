@@ -464,6 +464,18 @@ a:hover {
   display: block;
 }
 
+.video-embed {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 14px 44px rgba(77, 77, 79, 0.16);
+}
+
+.video-embed video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .embed-btn {
   position: absolute;
   left: 33%;
@@ -779,6 +791,20 @@ a:hover {
   font-size: 0.875rem;
   font-weight: 700;
   color: #6B6B6D;
+}
+
+.quote-logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.quotes--single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---- Contact ---- */
