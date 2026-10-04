@@ -1,5 +1,6 @@
 /* ============================================================
    Georg Volmer: Startseite (lädt zusätzlich zu style.css)
+   Header, Navigation, Sprachlink und Footer-Icons liegen in style.css.
    ============================================================ */
 
 :root {
@@ -48,62 +49,6 @@
   color: var(--text-2);
   max-width: 620px;
   margin-bottom: 48px;
-}
-
-/* ---- Header mit Navigation ---- */
-
-.home .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: saturate(140%) blur(8px);
-  -webkit-backdrop-filter: saturate(140%) blur(8px);
-  border-bottom: 1px solid var(--line);
-  padding: 14px 0;
-}
-
-.home .site-header .container { gap: 32px; }
-
-.site-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.site-nav ul {
-  display: flex;
-  gap: 28px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.site-nav li { margin: 0; }
-
-.site-nav a {
-  color: var(--text);
-  font-size: 0.9375rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.site-nav a:hover { color: var(--coral); text-decoration: none; }
-
-.site-nav .nav-cta {
-  background: var(--coral);
-  color: #fff;
-  padding: 9px 18px;
-  border-radius: 6px;
-}
-
-.site-nav .nav-cta:hover { background: var(--coral-dark); color: #fff; }
-
-.nav-lang {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--muted) !important;
 }
 
 /* ---- Buttons ---- */
@@ -443,40 +388,15 @@
 .contact-box .btn--ghost { color: #fff; border-color: rgba(255, 255, 255, 0.35); }
 .contact-box .btn--ghost:hover { border-color: #fff; }
 
-/* ---- Footer ---- */
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.footer-social a {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--line-2);
-  display: grid;
-  place-items: center;
-  color: var(--text);
-}
-
-.footer-social a:hover { color: var(--coral); border-color: var(--coral); }
-.footer-social svg { width: 18px; height: 18px; }
-
 /* ---- Responsive ---- */
 
 @media (max-width: 960px) {
-  .site-nav ul { gap: 20px; }
-  .site-nav .nav-hide-md { display: none; }
   .hero-home h1 { font-size: 2.75rem; }
   .facts { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 780px) {
   .home .container { padding-left: 20px; padding-right: 20px; }
-  .site-nav ul { display: none; }
   .section { padding: 72px 0; }
   .hero-home { padding-top: 40px; }
   .hero-grid, .about-grid, .contact-box { grid-template-columns: 1fr; gap: 40px; }
@@ -494,5 +414,4 @@
 
 @media (max-width: 420px) {
   .facts { grid-template-columns: 1fr; }
-  .site-nav .nav-cta { padding: 8px 14px; font-size: 0.875rem; }
 }

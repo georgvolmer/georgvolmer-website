@@ -15,14 +15,20 @@
   <!-- ===== Header (matches existing site) ===== -->
   <header class="site-header">
     <div class="container">
-      <a href="/" class="site-logo" aria-label="Georg Volmer – Home">
+      <a href="/portfolio" class="site-logo" aria-label="Georg Volmer, Portfolio">
         <img src="/assets/Georg-Volmer-logo-RGB.png" alt="Georg Volmer" height="38">
       </a>
-      <div class="lang-switch">
-        <span class="lang-switch-current" aria-current="page">EN</span>
-        <span class="lang-switch-sep">/</span>
-        <a href="/portfolio-de">DE</a>
-      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/portfolio" aria-current="page">Projects</a></li>
+        </ul>
+        <a href="/portfolio#contact" class="nav-cta">Contact</a>
+        <div class="lang-switch">
+          <a href="/portfolio-de" lang="de" hreflang="de">DE</a>
+          <span class="lang-switch-sep" aria-hidden="true">/</span>
+          <span class="lang-switch-current">EN</span>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -506,7 +512,7 @@
     </section>
 
     <!-- ===== Contact ===== -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <img src="/img/portfolio/georg-volmer-portrait-2.jpg" alt="Portrait of Georg Volmer">
         <div class="contact-copy">
@@ -525,9 +531,16 @@
   <!-- ===== Footer (matches existing site) ===== -->
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/georg-volmer" target="_blank" rel="noopener" aria-label="Georg Volmer on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@georgvolmer" target="_blank" rel="noopener" aria-label="Georg Volmer on YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.5 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.5zM9.6 15.6V8.4l6.3 3.6z"/></svg>
+        </a>
+      </div>
       <ul class="footer-nav">
-        <li><a href="/impressum">Impressum</a></li>
-        <li><a href="/datenschutz">Datenschutz</a></li>
+        <li><a href="/impressum" hreflang="de">Legal Notice</a></li>
         <li><a href="/privacy">Privacy Policy</a></li>
       </ul>
       <p class="footer-copy">&copy; 2026 Georg Volmer</p>
