@@ -3,119 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Georg Volmer — Articulate Storyline Coach</title>
-    <meta name="description" content="Georg Volmer hilft E-Learning-Professionals dabei, professionelle Articulate Storyline Kurse zu erstellen.">
+    <title>Georg Volmer | Learning Designer &amp; E-Learning Autor</title>
+    <meta name="description" content="Georg Volmer, Diplom-Psychologe und Learning Designer, konzipiert und produziert E-Learnings, Erklärvideos und interaktive Lernanwendungen für Unternehmen, Bildungsträger und Agenturen.">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/home.css">
     <link rel="icon" type="image/png" href="/assets/Georg-Volmer-icon-RGB.png">
     <link rel="apple-touch-icon" href="/assets/Georg-Volmer-icon-RGB.png">
-    <style>
-        .coming-soon-wrap {
-            min-height: calc(100vh - 73px - 89px);
-            display: flex;
-            align-items: center;
-        }
-        .coming-soon-wrap .container {
-            padding-top: 64px;
-            padding-bottom: 64px;
-        }
-        .eyebrow {
-            font-size: 0.8125rem;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: #F15B4E;
-            margin-bottom: 20px;
-        }
-        .coming-soon-wrap h1 {
-            font-size: 2.5rem;
-            line-height: 1.15;
-            margin-bottom: 24px;
-            max-width: 560px;
-        }
-        .coming-soon-wrap p {
-            font-size: 1.0625rem;
-            color: #4D4D4F;
-            max-width: 480px;
-            margin-bottom: 0;
-        }
-        .btn {
-            display: inline-block;
-            background: #F15B4E;
-            color: #ffffff;
-            font-weight: 500;
-            font-size: 0.9375rem;
-            padding: 14px 28px;
-            border-radius: 4px;
-            text-decoration: none;
-            transition: opacity 0.15s;
-            margin-top: 40px;
-        }
-        .btn:hover {
-            opacity: 0.88;
-            text-decoration: none;
-        }
-        .lang-divider {
-            border: none;
-            border-top: 1px solid #D2D2D2;
-            margin: 48px 0;
-            max-width: 480px;
-        }
-        .lang-block h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #4D4D4F;
-            line-height: 1.15;
-            margin-top: 0;
-            margin-bottom: 24px;
-            max-width: 560px;
-        }
-        .lang-block p {
-            font-size: 1.0625rem;
-            color: #4D4D4F;
-            max-width: 480px;
-            margin-bottom: 0;
-        }
-        @media (max-width: 600px) {
-            .coming-soon-wrap h1,
-            .lang-block h2 { font-size: 1.875rem; }
-        }
-    </style>
 </head>
-<body>
+<body class="home">
 
 <header class="site-header">
     <div class="container">
-        <a href="/" class="site-logo" aria-label="Georg Volmer – Startseite">
+        <a href="/" class="site-logo" aria-label="Georg Volmer, Startseite">
             <img src="/assets/Georg-Volmer-logo-RGB.png" alt="Georg Volmer" height="38">
         </a>
+        <nav class="site-nav" aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="/portfolio-de">Portfolio</a></li>
+                <li><a href="#ueber-mich">Über mich</a></li>
+                <li class="nav-hide-md"><a href="#werdegang">Werdegang</a></li>
+            </ul>
+            <a href="#kontakt" class="nav-cta">Kontakt</a>
+            <a href="/portfolio" class="nav-lang" lang="en" title="English portfolio">EN</a>
+        </nav>
     </div>
 </header>
 
 <main>
-    <div class="coming-soon-wrap">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero-home">
         <div class="container">
-
-            <p class="eyebrow">Articulate Storyline Coach</p>
-            <h1>Learning Designer.</h1>
-            <p>Ich entwickle digitales Lernen für Unternehmen und befähige Teams, es selbst zu tun.</p>
-            <a href="/portfolio-de" class="btn">Portfolio ansehen</a>
-
-            <hr class="lang-divider">
-
-            <div class="lang-block">
-                <h2>Learning designer.</h2>
-                <p>I build digital learning for organizations, and I help teams build their own.</p>
-                <a href="/portfolio" class="btn">See my work</a>
+            <div class="hero-grid">
+                <div>
+                    <span class="kicker">Learning Designer &amp; E-Learning Autor</span>
+                    <h1>E-Learning, das im Arbeitsalltag <em>ankommt.</em></h1>
+                    <p class="hero-sub">Ich konzipiere und produziere digitale Lernangebote für Unternehmen, Bildungsträger und Agenturen. Storyline-Module, Erklärvideos und interaktive Anwendungen, von der ersten Idee bis zur fertigen Datei für Ihr LMS.</p>
+                    <div class="btn-row">
+                        <a href="#kontakt" class="btn btn--primary">Projekt anfragen</a>
+                        <a href="/portfolio-de" class="btn btn--ghost">Portfolio ansehen</a>
+                    </div>
+                </div>
+                <figure class="hero-photo">
+                    <svg class="hero-brush" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                        <defs>
+                            <filter id="brush-edge" x="-6%" y="-6%" width="112%" height="112%">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.06 0.45" numOctaves="4" seed="11" result="streaks"/>
+                                <feDisplacementMap in="SourceGraphic" in2="streaks" scale="11" xChannelSelector="R" yChannelSelector="G"/>
+                            </filter>
+                        </defs>
+                        <rect x="14" y="14" width="372" height="472" rx="44" fill="#F15B4E" filter="url(#brush-edge)"/>
+                    </svg>
+                    <img src="/img/home/georg-volmer-hero.jpg" alt="Georg Volmer sitzt lächelnd auf einem weißen Hocker vor hellem Hintergrund" width="1000" height="1250" fetchpriority="high">
+                </figure>
             </div>
 
-            <a href="https://www.linkedin.com/in/georg-volmer" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-
+            <ul class="facts">
+                <li><strong>Seit 2017</strong><span>Erfahrung mit Articulate Storyline</span></li>
+                <li><strong>PPI AG &amp; DEKRA SE</strong><span>Learning Design im Konzernumfeld</span></li>
+                <li><strong>DIHK-anerkannt</strong><span>360°-Schulungsanwendung für die ADR-Tank-Schulung</span></li>
+                <li><strong>Diplom-Psychologe</strong><span>Schwerpunkt Arbeits- und Organisations&shy;psychologie</span></li>
+            </ul>
         </div>
-    </div>
+    </section>
+
+    <!-- ===== Leistungen ===== -->
+    <section id="leistungen" class="section">
+        <div class="container">
+            <span class="kicker">Leistungen</span>
+            <h2>Was ich für Sie umsetze</h2>
+            <p class="section-lede">Sie bringen das Fachwissen mit, ich mache daraus ein Lernangebot, das Ihre Zielgruppe gerne durcharbeitet.</p>
+
+            <div class="services">
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 8.5v5l4-2.5z"/></svg>
+                    </div>
+                    <h3>Storyline-E-Learnings</h3>
+                    <p>Interaktive Module in Articulate Storyline 360, mit Szenarien, Entscheidungen und direktem Feedback. Ausgeliefert als SCORM-Paket für Ihr LMS.</p>
+                </article>
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3z"/></svg>
+                    </div>
+                    <h3>Animierte Erklärvideos</h3>
+                    <p>Kurze Animationen, die einen Sachverhalt in ein bis zwei Minuten auf den Punkt bringen. Drehbuch, Animation und Untertitel aus einer Hand.</p>
+                </article>
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12H4z"/><path d="M8 11h8M8 15h5"/></svg>
+                    </div>
+                    <h3>Konzeption &amp; Drehbuch</h3>
+                    <p>Lernziele, Struktur und Storyboard, bevor die Produktion startet. Als zertifizierter Drehbuchautor schreibe ich Texte, die auch gesprochen gut funktionieren.</p>
+                </article>
+                <article class="service">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="9" ry="3.5"/><path d="M12 3v18"/></svg>
+                    </div>
+                    <h3>Interaktive Anwendungen</h3>
+                    <p>360°-Rundgänge, Web-Anwendungen und KI-gestützte Werkzeuge für Fälle, in denen ein klassisches E-Learning an seine Grenzen kommt.</p>
+                </article>
+            </div>
+
+            <p class="services-note"><strong>Für Agenturen und Bildungsträger:</strong> Ich arbeite auch als externe Verstärkung in Ihrem Team, nach Ihren Vorlagen, Styleguides und Prozessen.</p>
+        </div>
+    </section>
+
+    <!-- ===== Projekte ===== -->
+    <section id="projekte" class="section section--tint">
+        <div class="container">
+            <div class="work-head">
+                <div>
+                    <span class="kicker">Portfolio</span>
+                    <h2>Ausgewählte Projekte</h2>
+                    <p class="section-lede">Drei Beispiele aus meiner Arbeit. Im Portfolio finden Sie zu jedem Projekt das Problem, die Lösung und die Entscheidungen dahinter.</p>
+                </div>
+                <a href="/portfolio-de" class="btn btn--ghost">Alle Projekte ansehen</a>
+            </div>
+
+            <div class="work-grid">
+                <a href="/portfolio-de#ceo-spoof" class="work-card">
+                    <img src="/img/portfolio/ceo-spoof-card.jpg" alt="CEO-Spoof-Modul: verdächtige Absenderdomain in einer gefälschten CEO-E-Mail hervorgehoben" loading="lazy">
+                    <span class="work-body">
+                        <span class="work-tag">Storyline 360</span>
+                        <span class="work-title">CEO-Spoof erkennen</span>
+                        <span class="work-blurb">Ein Modul, in dem Mitarbeitende die vier Warnsignale gefälschter CEO-Mails selbst finden und richtig reagieren.</span>
+                    </span>
+                </a>
+                <a href="/portfolio-de#hartleib" class="work-card">
+                    <img src="/assets/video/brandschutzhelfer-poster.jpg" alt="Vorschaubild des Erklärvideos Brandschutzhelfer" loading="lazy">
+                    <span class="work-body">
+                        <span class="work-tag">Erklärvideo</span>
+                        <span class="work-title">Brandschutzhelfer in 90 Sekunden</span>
+                        <span class="work-blurb">Eine Animation für einen Arbeitsschutzberater, die seinen Kunden erklärt, warum sie Brandschutzhelfer ausbilden müssen.</span>
+                    </span>
+                </a>
+                <a href="/portfolio-de#adr-tour" class="work-card">
+                    <img src="/img/portfolio/adr-tour-hero.jpg" alt="ADR-360°-Anwendung: Tankwagen mit grünen Markierungspunkten" loading="lazy">
+                    <span class="work-body">
+                        <span class="work-tag">360° Web-Anwendung</span>
+                        <span class="work-title">ADR 360° Tankwagen-Rundgang</span>
+                        <span class="work-blurb">Ein Tankwagen zum Erkunden im Browser. Entwickelt für die ADR-Tank-Schulung und bundesweit von der DIHK anerkannt.</span>
+                    </span>
+                </a>
+            </div>
+
+            <figure class="home-quote">
+                <blockquote>Er hat meinen Text auf das Wesentliche gebracht und ein Ergebnis geliefert, das ich direkt in meiner Kommunikation einsetzen kann.</blockquote>
+                <figcaption>Daniel Hartleib, Arbeitsschutzberatung Hartleib</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ===== Über mich ===== -->
+    <section id="ueber-mich" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <figure class="about-photo">
+                    <img src="/img/home/georg-volmer-ueber-mich.jpg" alt="Georg Volmer lächelt vor einer braunen, strukturierten Wand" width="1400" height="935" loading="lazy">
+                </figure>
+                <div class="about-text">
+                    <span class="kicker">Über mich</span>
+                    <h2>Psychologe, der E-Learnings baut</h2>
+                    <p>Ich bin Georg Volmer, Diplom-Psychologe und Learning Designer. Seit 2017 entwickle ich digitale Lernangebote, zuerst bei der PPI AG in Kiel, danach bei der DEKRA SE. Seit Juli 2026 arbeite ich selbstständig.</p>
+                    <p>Mein Studium prägt bis heute, wie ich an Projekte herangehe. Ich frage zuerst, was Menschen nach der Schulung anders machen sollen. Danach entscheide ich, ob es dafür ein Storyline-Modul, ein Video oder etwas ganz anderes braucht.</p>
+                    <p>Auf meinem englischsprachigen YouTube-Kanal zeige ich anderen E-Learning-Entwicklern, wie sie mit Articulate Storyline professionelle Kurse bauen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Werdegang ===== -->
+    <section id="werdegang" class="section section--tint">
+        <div class="container">
+            <span class="kicker">Werdegang</span>
+            <h2>Stationen</h2>
+            <p class="section-lede">Fast zehn Jahre Learning Design, davon die meiste Zeit in großen Organisationen mit vielen Fachabteilungen.</p>
+
+            <ol class="timeline">
+                <li class="tl-current">
+                    <span class="tl-date">seit 07/2026</span>
+                    <div>
+                        <p class="tl-role">Selbstständiger Learning Designer &amp; E-Learning Autor</p>
+                        <p class="tl-org">Gettorf bei Kiel, für Kunden in ganz Deutschland</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="tl-date">02/2025 bis 06/2026</span>
+                    <div>
+                        <p class="tl-role">Senior Learning Designer</p>
+                        <p class="tl-org">DEKRA SE</p>
+                        <p class="tl-desc">Konzeption und Steuerung komplexer Lernprojekte mit Video, Interaktion, 3D und 360°. Erprobung von KI in der Content-Erstellung, Prototypen und Showcases.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="tl-date">01/2022 bis 01/2025</span>
+                    <div>
+                        <p class="tl-role">Learning Designer</p>
+                        <p class="tl-org">DEKRA SE</p>
+                        <p class="tl-desc">Lernkonzepte mit Fachexperten, Produktion von E-Learnings, Erklärvideos und 360°-Anwendungen mit Storyline, Rise, Camtasia und Vyond.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="tl-date">10/2017 bis 12/2021</span>
+                    <div>
+                        <p class="tl-role">Kursentwickler E-Learning</p>
+                        <p class="tl-org">PPI AG, Kiel</p>
+                        <p class="tl-desc">Lerninhalte für interne Auftraggeber, Steuerung von Grafik und Tonstudio, Weiterentwicklung der Lernplattform inklusive mobilem Lernen.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="tl-date">2009 bis 2016</span>
+                    <div>
+                        <p class="tl-role">Diplom-Psychologie</p>
+                        <p class="tl-org">Christian-Albrechts-Universität zu Kiel</p>
+                        <p class="tl-desc">Schwerpunkt Arbeits- und Organisationspsychologie, Nebenfach Betriebswirtschaftslehre.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===== Kontakt ===== -->
+    <section id="kontakt" class="section">
+        <div class="container">
+            <div class="contact-box">
+                <div>
+                    <span class="kicker">Kontakt</span>
+                    <h2>Sie planen ein Lernprojekt?</h2>
+                    <p>Schreiben Sie mir kurz, worum es geht, für wen es gedacht ist und bis wann es fertig sein soll. Ich melde mich mit einer ersten Einschätzung bei Ihnen.</p>
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:georg@georgvolmer.com?subject=Projektanfrage" class="btn btn--primary">E-Mail schreiben</a>
+                    <a href="https://www.linkedin.com/in/georg-volmer" class="btn btn--ghost" target="_blank" rel="noopener">Auf LinkedIn vernetzen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <footer class="site-footer">
     <div class="container">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/georg-volmer" target="_blank" rel="noopener" aria-label="Georg Volmer auf LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@georgvolmer" target="_blank" rel="noopener" aria-label="Georg Volmer auf YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.5 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.5zM9.6 15.6V8.4l6.3 3.6z"/></svg>
+            </a>
+        </div>
         <ul class="footer-nav">
             <li><a href="/impressum">Impressum</a></li>
             <li><a href="/datenschutz">Datenschutz</a></li>
